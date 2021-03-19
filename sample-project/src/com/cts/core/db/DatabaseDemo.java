@@ -1,7 +1,6 @@
 package com.cts.core.db;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -27,6 +26,7 @@ public class DatabaseDemo {
 		ResultSet rs = stmt.executeQuery(query);
 
 		while (rs.next()) {
+			
 
 			System.out.println(rs.getInt("id") + " : " + rs.getString(2) + " : " + rs.getString("company"));
 		}
